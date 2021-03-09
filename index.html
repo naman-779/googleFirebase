@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-storage.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h3 id = "details-email" class="hide">Email : </h3>
+        <h3 id = "details-pob" class="hide">Place of Birth : </h3>
+        <h3 id = "details-dob" class="hide">Date of Birth: </h3>
+        <h3 id = "details-phone" class="hide">Phone: </h3>
+        <h3 id = "details-address" class="hide">Address: </h3>
+
+        <input id ="UID" class="input-box" placeholder="User ID"><br>
+        <input id ="txtEmail" class="input-box" type="email" placeholder="Email"><br>
+        <input id ="txtPassword" class="input-box" type="password" placeholder="Password"><br>
+        <input placeholder="Date of Birth" class="input-box hide" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" id="DOB"><br>
+        <input id ="POB" class="input-box hide" placeholder="Place of Birth"><br>
+        <input id ="Address" class="input-box hide" placeholder="Your Address"><br>
+        <input id ="phone" class="input-box hide" placeholder="Phone No."><br>
+        <button id = "buttonLogin" class="button">Login</button>
+        <button id = "buttonSignUp" class="button">SignUp</button>
+        <button id = "buttonLogOut" class="hide button">Sign Out</button>
+    </div>
+
+
+    <!-- <script src="app.js"></script> -->
+
+
+    <script src="app.js">
+    </script>
+</body>
+</html>
